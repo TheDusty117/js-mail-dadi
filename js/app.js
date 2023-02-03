@@ -31,8 +31,9 @@ console.log(insertMail)
 
 if (insertMail === arrayMail) {
   alert("la mail esiste!")
-} else if { (insertMail !== arrayMail)
-  alert("la maile non esiste!") }
+} else {
+  alert("la mail non esiste!")
+  console.log(insertMail)
+}
 
-console.log(insertMail)
 
