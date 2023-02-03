@@ -14,13 +14,18 @@ console.log(numeriDaGenerarePlayer)
 
 //decretare il vincitore in base a chi fa il punteggio piu' alto
 
-let winner = false
-
+let risultato = true
+// console.log(risultato, "pc vince")
 for (i = 0; i < 6; i++) {
   if (numeriDaGenerarePc < numeriDaGenerarePlayer) {
-    winner = true
+    risultato = false
+    console.log(risultato, "player vince")
+  } else if (numeriDaGenerarePc === numeriDaGenerarePlayer) {
+    console.log(risultato, "pareggio")
+  } else {
+    console.log(risultato, "pc vince")
   }
-  console.log(winner)
+  
 }
 
 // PS CREARE DUE ARRAY, UNO PER PC E UNO PER IL PLAYER, e confrontare i numeri?
