@@ -19,11 +19,12 @@ console.log(insertMail)
 
 
 
-// il risultato inserito dall'utente nel prompt deve essere CONTROLLATO rispetto alle mail dell'Array
+// il risultato inserito dall'utente nel prompt deve essere CONTROLLATO rispetto alle mail dell'Array e andra' a finire
+// negli ARRAY  in base al RISULTATO
 
-mailExisting = []
+let mailExisting = []
 
-mailNotExisting = []
+let mailNotExisting = []
 
 for (i = 0; i < arrayMail.length; i++) {
   console.log(arrayMail[i])
@@ -36,6 +37,18 @@ for (i = 0; i < arrayMail.length; i++) {
 }
 
 console.log(mailExisting, mailNotExisting)
+
+let risultatoEsistente = mailExisting
+
+let risultatoNonEsistente = mailNotExisting
+
+if (mailExisting = risultatoEsistente) {
+  document.getElementById("output-esisite").innerHTML
+} else {
+  document.getElementById("output-non-esiste").innerHTML
+}
+
+
 
 // for (let i = 0; i < arrayMail.length; i++) {
 
