@@ -26,11 +26,11 @@ console.log(mailSaul)
 const insertMail = prompt('enter your email pal')
 console.log(insertMail)
 
+// il prodotto inserito dall'utente deve essere CONTROLLATO rispetto alle mail dell'Array
+
 arrayExisting = []
 
 arrayNotExisting = []
-
-//controllo della mail inserita rispetto a quelle dell'ARRAY precedente
 
 for (let i = 0; i < arrayMail.length; i++) {
 
@@ -38,11 +38,11 @@ if (insertMail === arrayMail) {
   arrayExisting.push("esiste!")
 }
 
-if (insertMail !== arrayMail) {
+else if (insertMail !== arrayMail) {
   arrayNotExisting.push("non esiste!")
 }
   
+console.log(arrayExisting, arrayNotExisting)
 }
 
-console.log(arrayExisting, arrayNotExisting)
 
