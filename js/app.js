@@ -38,7 +38,11 @@ for (i = 0; i < arrayMail.length; i++) {
 
 console.log(mailExisting, mailNotExisting)
 
+
+
 // scrivere nell'HTML il risultato pushato dal forche va dentro i due Array mailExisting e mailNotExisting
+
+
 
 
 // document.getElementById("output-esiste").innerHTML = mailExisting[i]
