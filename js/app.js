@@ -8,17 +8,8 @@ console.log(arrayMail)
 
 console.log(arrayMail.length)
 
-let mailWalter = arrayMail[0]
-console.log(mailWalter)
 
-let mailGus = arrayMail[1]
-console.log(mailGus)
 
-let mailJesse = arrayMail[2]
-console.log(mailJesse)
-
-let mailSaul = arrayMail[3]
-console.log(mailSaul)
 
 
 //creo un PROMPT che chiede la mail all' UTENTE
@@ -26,23 +17,37 @@ console.log(mailSaul)
 const insertMail = prompt('enter your email pal')
 console.log(insertMail)
 
-// il prodotto inserito dall'utente deve essere CONTROLLATO rispetto alle mail dell'Array
 
-arrayExisting = []
 
-arrayNotExisting = []
+// il risultato inserito dall'utente nel prompt deve essere CONTROLLATO rispetto alle mail dell'Array
 
-for (let i = 0; i < arrayMail.length; i++) {
+mailExisting = []
 
-if (insertMail === arrayMail) {
-  arrayExisting.push("esiste!")
-}
+mailNotExisting = []
 
-else if (insertMail !== arrayMail) {
-  arrayNotExisting.push("non esiste!")
-}
+for (i = 0; i < arrayMail.length; i++) {
+  console.log(arrayMail[i])
+  if (arrayMail[i] === insertMail) {
+    mailExisting.push("ESISTE!")
+  } else {
+    mailNotExisting.push("NON ESISTE!")
+  }
   
-console.log(arrayExisting, arrayNotExisting)
 }
+
+console.log(mailExisting, mailNotExisting)
+
+// for (let i = 0; i < arrayMail.length; i++) {
+
+// if (insertMail === arrayMail) {
+//   arrayExisting.push("esiste!")
+// }
+
+// else if (insertMail !== arrayMail) {
+//   arrayNotExisting.push("non esiste!")
+// }
+  
+// console.log(arrayExisting, arrayNotExisting)
+// }
 
 
