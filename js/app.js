@@ -29,14 +29,15 @@ for (i = 0; i < arrayMail.length; i++) {
   if (arrayMail[i] === insertMail) {
     mailTrovata = true
     console.log(mailTrovata, "ho trovato")
+    
   } 
 }
 console.log(mailTrovata)
 
 
 
+
+
 //il for qui sopra non ha bisogno di un'ulteriore else con mailtrovata = false, perche gia la condizione iniziale di mailTrovata
 // che posso trovare a riga 25 (fuori dal for), possiede gia' la condizione di false di BASE, quindi riscriverla dentro il FOR
 // creerebbe solamente un bug, ed anche una ripetizione inutile del suo valore gia' di base fuori dal FOR..!!!!!
-
-mailTrovata.doc
