@@ -26,14 +26,23 @@ console.log(mailSaul)
 const insertMail = prompt('enter your email pal')
 console.log(insertMail)
 
+arrayExisting = []
+
+arrayNotExisting = []
 
 //controllo della mail inserita rispetto a quelle dell'ARRAY precedente
 
+for (let i = 0; i < arrayMail.length; i++) {
+
 if (insertMail === arrayMail) {
-  alert("la mail esiste!")
-} else {
-  alert("la mail non esiste!")
-  console.log(insertMail)
+  arrayExisting.push("esiste!")
 }
 
+if (insertMail !== arrayMail) {
+  arrayNotExisting.push("non esiste!")
+}
+  
+}
+
+console.log(arrayExisting, arrayNotExisting)
 
