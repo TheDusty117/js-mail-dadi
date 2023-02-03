@@ -38,29 +38,7 @@ for (i = 0; i < arrayMail.length; i++) {
 
 console.log(mailExisting, mailNotExisting)
 
-let risultatoEsistente = mailExisting
-
-let risultatoNonEsistente = mailNotExisting
-
-if (mailExisting = risultatoEsistente) {
-  document.getElementById("output-esisite").innerHTML
-} else {
-  document.getElementById("output-non-esiste").innerHTML
-}
+// scrivere nell'HTML il risultato pushato dal forche va dentro i due Array mailExisting e mailNotExisting
 
 
-
-// for (let i = 0; i < arrayMail.length; i++) {
-
-// if (insertMail === arrayMail) {
-//   arrayExisting.push("esiste!")
-// }
-
-// else if (insertMail !== arrayMail) {
-//   arrayNotExisting.push("non esiste!")
-// }
-  
-// console.log(arrayExisting, arrayNotExisting)
-// }
-
-
+// document.getElementById("output-esiste").innerHTML = mailExisting[i]
