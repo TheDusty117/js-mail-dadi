@@ -31,7 +31,7 @@ for (i = 0; i < 6; i++) {
     console.log(playerVince, "player vince")
   } else if (numeriDaGenerarePc === numeriDaGenerarePlayer) {
     console.log(pareggio, "pareggio")
-  } else if (numeriDaGenerarePc > numeriDaGenerarePlayer) {
+  } else {
     console.log(pcVince, "pc vince")
   }
   
