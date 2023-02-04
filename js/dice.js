@@ -4,9 +4,12 @@
 //creo due generatori di numeri randomici da 0 a 6
 
 // si usa math floor che arrotonda, altrimenti uscirebbero tantissimi numeri decimali!!!
+
+//generatore numeri del PC
 const numeriDaGenerarePc = Math.floor(Math.random() * 6)
 console.log(numeriDaGenerarePc)
 
+//generatore numeri del PLAYER
 const numeriDaGenerarePlayer = Math.floor(Math.random() * 6)
 console.log(numeriDaGenerarePlayer)
 
@@ -14,16 +17,22 @@ console.log(numeriDaGenerarePlayer)
 
 //decretare il vincitore in base a chi fa il punteggio piu' alto
 
-let risultato = true
+// TRE VARIABILI CON CONDIZIONE TRUE, CHE SE VERRANNO SODDISFATTE NEL FOR PRODURRANO UN 
+// CONSOLE LOG CHE DECRETERA' IL VINCITORE
+
+let pcVince = true
+let playerVince = true
+let pareggio = true
+
+
 // console.log(risultato, "pc vince")
 for (i = 0; i < 6; i++) {
   if (numeriDaGenerarePc < numeriDaGenerarePlayer) {
-    risultato = false
-    console.log(risultato, "player vince")
+    console.log(playerVince, "player vince")
   } else if (numeriDaGenerarePc === numeriDaGenerarePlayer) {
-    console.log(risultato, "pareggio")
-  } else {
-    console.log(risultato, "pc vince")
+    console.log(pareggio, "pareggio")
+  } else if (numeriDaGenerarePc > numeriDaGenerarePlayer) {
+    console.log(pcVince, "pc vince")
   }
   
 }
