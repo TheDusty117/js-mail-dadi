@@ -3,7 +3,7 @@
 
 //creo due generatori di numeri randomici da 0 a 6
 
-
+// si usa math floor che arrotonda, altrimenti uscirebbero tantissimi numeri decimali!!!
 const numeriDaGenerarePc = Math.floor(Math.random() * 6)
 console.log(numeriDaGenerarePc)
 
@@ -28,4 +28,6 @@ for (i = 0; i < 6; i++) {
   
 }
 
-// PS CREARE DUE ARRAY, UNO PER PC E UNO PER IL PLAYER, e confrontare i numeri?
+
+// GIOCO RIUSCITO, ho creato una variabile let risultato che di base e' true,
+// dentro un ciclo for ho creato invece 3 casistiche dove vince O IL PLAYER, O SI PAREGGIA OPPURE PC VINCE *VEDI CODICE PER CAPIRE*
